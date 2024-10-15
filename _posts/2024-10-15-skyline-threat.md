@@ -17,6 +17,6 @@ KKIA, MAS, Boeing 737-300 -> `CTF{BKI_MH_B737-300}`
 - Category: OSINT
 - **Flag format:** `CTF{AIRPORT_AIRLINE_AIRCRAFT}`
 
-![chall.png](/union-depository/osint/skyline-threat)
+![chall.png](/union-depository/osint/skyline-threat/chall.png)
 
 
