@@ -1,43 +1,41 @@
-# Chirpy Starter
+# Self-Crafted CTF Challenges
 
-[![Gem Version](https://img.shields.io/gem/v/jekyll-theme-chirpy)][gem]&nbsp;
-[![GitHub license](https://img.shields.io/github/license/cotes2020/chirpy-starter.svg?color=blue)][mit]
+This repository contains my journey of creating unique CTF (Capture The Flag) challenges. These challenges are inspired by techniques and vulnerabilities from past CTF events, utilizing various methods of exploitation that can be translated into different CTF categories.
 
-When installing the [**Chirpy**][chirpy] theme through [RubyGems.org][gem], Jekyll can only read files in the folders
-`_data`, `_layouts`, `_includes`, `_sass` and `assets`, as well as a small part of options of the `_config.yml` file
-from the theme's gem. If you have ever installed this theme gem, you can use the command
-`bundle info --path jekyll-theme-chirpy` to locate these files.
+## Objective
+The goal of this project is to:
+- Develop and design CTF challenges that cover a wide range of cybersecurity skills and knowledge.
+- Learn from past CTF events and implement new techniques to create engaging and educational challenges.
+- Provide resources and experiences that help others improve their skills in vulnerability analysis and exploitation.
 
-The Jekyll team claims that this is to leave the ball in the user’s court, but this also results in users not being
-able to enjoy the out-of-the-box experience when using feature-rich themes.
+## Current Challenges
+Here are the challenges that I have created so far:
 
-To fully use all the features of **Chirpy**, you need to copy the other critical files from the theme's gem to your
-Jekyll site. The following is a list of targets:
+| Challenge Name                | Category |
+|-------------------------------|----------|
+| Lemon and Tangerine           | crypto   |
+| Pixel Pursuit                 | forensic |
+| Financial Fallout             | forensic |
+| rev001                        | reverse  |
+| Powershell Enigma             | malware  |
+| rev002                        | reverse  |
+| Total Wreck Spreadsheets      | malware  |
+| nous ne pouvons rien faire v1 | osint    |
+| nous ne pouvons rien faire v2 | osint    |
+| Makeshift Aquarium            | osint    |
+| Singing Train                 | osint    |
+| Skyline Threat                | osint    |
+| rev003                        | reverse  |
 
-```shell
-.
-├── _config.yml
-├── _plugins
-├── _tabs
-└── index.html
-```
+> More details about each challenge can be found in the folder `union-depository` or [try it out here](https://0x251e-challenge.github.io/challenges/).
 
-To save you time, and also in case you lose some files while copying, we extract those files/configurations of the
-latest version of the **Chirpy** theme and the [CD][CD] workflow to here, so that you can start writing in minutes.
+## Upcoming Challenges
+These are the challenges I'm currently working on or plan to release soon:
+1. Random shuffled QR image
+2. Cracking Cisco enc\_GroupPw password (type 5 and 7) 
+3. MSI files forensic
+4. Linux memory forensic
+5. Network forensic tracing data exfiltration
+6. Windows Disk Forensic - Recover deleted files
+7. pyjail
 
-## Usage
-
-Check out the [theme's docs](https://github.com/cotes2020/jekyll-theme-chirpy/wiki).
-
-## Contributing
-
-This repository is automatically updated with new releases from the theme repository. If you encounter any issues or want to contribute to its improvement, please visit the [theme repository][chirpy] to provide feedback.
-
-## License
-
-This work is published under [MIT][mit] License.
-
-[gem]: https://rubygems.org/gems/jekyll-theme-chirpy
-[chirpy]: https://github.com/cotes2020/jekyll-theme-chirpy/
-[CD]: https://en.wikipedia.org/wiki/Continuous_deployment
-[mit]: https://github.com/cotes2020/chirpy-starter/blob/master/LICENSE
