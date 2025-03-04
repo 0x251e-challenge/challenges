@@ -15,29 +15,16 @@ concurrency:
 
 jobs:
   build:
-    runs-on: ubuntu-24.04-x64
+    runs-on: ubuntu-latest
     steps:
       - name: Checkout
         uses: actions/checkout@v4
 
-      - name: Install ruby-build
-        run: |
-          git clone https://github.com/rbenv/ruby-build.git
-          prefix=/usr/local sudo ./ruby-build/install.sh
-
-      - name: Install Ruby 3.1.4
-        run: |
-          ruby-build 3.1.4 /opt/hostedtoolcache/Ruby/3.1.4/x64
-          touch /opt/hostedtoolcache/Ruby/3.1.4/x64.complete
-
-      - name: Set up Ruby path
-        run: |
-          echo "/opt/hostedtoolcache/Ruby/3.1.4/x64/bin" >> $GITHUB_PATH
-
-      - name: Install dependencies
-        run: |
-          gem install bundler
-          bundle install
+      - name: Setup Ruby
+        uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: '3.1.4'
+          bundler-cache: true
 
       - name: Setup Pages
         id: pages
@@ -55,7 +42,7 @@ jobs:
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
-    runs-on: ubuntu-24.04-x64
+    runs-on: ubuntu-latest
     needs: build
     steps:
       - name: Deploy to GitHub Pages
