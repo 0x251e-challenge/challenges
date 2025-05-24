@@ -1,7 +1,8 @@
 ---
 title: Reflective Hidden Agenda
 time: 2025-05-19
-categories: [medium]
+categories: [reverse]
+tags: [medium]
 image: /assets/posts/chall_category/rev.jpg
 ---
 

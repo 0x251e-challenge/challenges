@@ -1,7 +1,8 @@
 ---
 title: Trust Issues
 time: 2025-05-17
-categories: [easy]
+categories: [reverse]
+tags: [easy]
 image: /assets/posts/chall_category/rev.jpg
 ---
 
