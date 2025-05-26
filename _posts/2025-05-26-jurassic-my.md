@@ -1,6 +1,6 @@
 ---
 title: Jurassic.MY
-time: 2025-05-27
+time: 2025-05-26
 categories: [osint]
 tags: [easy, reverse image search]
 image: /assets/posts/chall_category/osint.jpg
