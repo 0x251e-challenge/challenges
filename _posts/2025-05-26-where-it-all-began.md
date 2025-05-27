@@ -12,4 +12,4 @@ A photograph of an old American school bus converted into a cafe was recently sh
 - **Flag format:** `bbctf{[a-zA-Z0-9]+\}`
 - Challenge image:
 
-![where-it-all-began.png(/union-depository/osint/where-it-all-began/where-it-all-began.png) 
+![where-it-all-began.png](/union-depository/osint/where-it-all-began/where-it-all-began.png) 
