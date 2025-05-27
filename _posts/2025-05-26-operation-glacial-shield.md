@@ -16,7 +16,7 @@ As part of an OSINT investigation analyst, you have received an email containing
 <script>
 function downloadFile() {
     const link = document.createElement('a');
-    link.href = 'https://github.com/0x251e-challenge/challenges/raw/main/union-depository/osint/operation-glacial-sheild/operation_glacial_shield.eml';
+    link.href = 'https://github.com/0x251e-challenge/challenges/raw/main/union-depository/osint/operation-glacial-shield/operation_glacial_shield.eml';
     link.download = 'operation_glacial_shield.eml';
     link.click();
 }
