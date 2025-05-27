@@ -124,9 +124,9 @@ LRESULT __stdcall WindowProc(HWND hWndParent, UINT Msg, WPARAM wParam, LPARAM lP
           v18 = 0;
           decryptFlagPart(&encryptedFirstPart, 9, v20);
           if ( checkSecondPart(String, v19) )
-            snprintf(__stream, 0x32u, "bbctf{%s%s}\n... hey that is mine!!!", v20, v19);
+            snprintf(__stream, 0x32u, "bbctf{}\n... hey that is mine!!!", v20, v19);
           else
-            snprintf(__stream, 0x32u, "bbctf{%s\n... but is it mine thou ???", v20);
+            snprintf(__stream, 0x32u, "bbctf{... but is it mine thou ???", v20);
           MessageBoxA(hWndParent, __stream, "Flag Found!", 0);
         }
         else
@@ -162,7 +162,7 @@ LRESULT __stdcall WindowProc(HWND hWndParent, UINT Msg, WPARAM wParam, LPARAM lP
 
 Now within this function of WindowProc, it shows logic handling and extra string processing function. 
 
-At this part, we able to perform backtracing since we notice some unique strings such as `Flag Found` and `bbctf{%s%s}`. 
+At this part, we able to perform backtracing since we notice some unique strings such as `Flag Found` and `bbctf{ }`. 
 
 ![luhn-vault-3](/assets/posts/chall-writeup-img/luhn-vault/luhn-vault-3.jpg) 
 
