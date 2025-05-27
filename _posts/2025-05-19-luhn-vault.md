@@ -195,7 +195,7 @@ BOOL __cdecl luhnCheck(char *Str)
 The function checks whether the input passes the Luhn algorithm which is a common way to validate credit card numbers. Before it process the input, it needs the 16 digits of input. The function takes in parameters of the 16 digits number input but in the form of char and then converts the ascii to numerical by subtracting with 48. After that it performs a luhn algorithm check to determine a valid unique 16 digits number. 
 
 **Conditions to get the first part of the flag**:
-- 16 digits -> `strlen(String)==16`
+- 16 digits -> strlen(String)==16
 - luhnCheck will return true/false after mod with 10, if return result is 0 true otherwise is false
 
 
