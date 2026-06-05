@@ -18,8 +18,8 @@ Invitation to Java
 <script>
 function downloadFile() {
     const link = document.createElement('a');
-    link.href = 'https://github.com/0x251e-challenge/challenges/raw/main/union-depository/reverse/trust-issues/trust-issue';
-    link.download = 'trust-issue';
+    link.href = 'https://github.com/0x251e-challenge/challenges/raw/main/union-depository/reverse/invitation-to-java/InviteValidator.jar
+    link.download = 'InviteValidator.jar';
     link.click();
 }
 </script>
