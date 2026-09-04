@@ -1,0 +1,15 @@
+Solution:
+
+1. file/DIE -> PE32 .NET assembly, not native (CLR header present, 75-byte import table = mscoree stub only)
+2. Obfuscated with ConfuserEx: renaming, control-flow flattening, encrypted constants
+3. Decompile with ilspycmd / dnSpy. Reflection-loading the assembly fails (invisible-unicode nested type names)
+4. Form1 KeyDown (Enter) -> compares Environment.UserName against decrypted constant "c0ff33"
+5. On match: resource "d0nut_glaz3" -> Array.Reverse -> FromBase64String -> VirtualAlloc(RWX) + CreateThread
+6. Shellcode is Donut: E8 stub, DONUT_INSTANCE at +0x5, len 0x29C0 (5 + 0x29C0 == call target)
+7. Chaskey-CTR key is plaintext at instance+0x4; encrypted region starts at api_cnt (+572, not the
+   568 that current donut headers give - build used a different donut version)
+8. Embedded module = payload.dll (.NET, 4608 bytes, uncompressed), class Payload.Flag, method Run
+9. Run() writes the flag to HKCU\SOFTWARE\Microsoft\Windows NT\CurrentVersion, value "Flag"
+   (never printed on screen)
+
+HNYX{c0nfu$1nG_tH3_d0nUt_4_c0ff33}

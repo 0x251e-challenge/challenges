@@ -12,7 +12,8 @@ A psychedelic ASCII donut rave suddenly explodes onto your screen, spinning maje
 
 - Category: Reverse
 - Difficulty: Medium
-- SHA256: `4718c0e31f6d16feab7d402c40ce5025e650f55b28cbeadf1678e3c81b0eaaa4`
+- SHA256 (`Confused_Donut.exe`): `4718c0e31f6d16feab7d402c40ce5025e650f55b28cbeadf1678e3c81b0eaaa4`
+- Archive password: `infected`
 - **Flag format:** `HNYX{flag-string}`
 
 <button onclick="downloadFile()">Download File</button>
@@ -20,8 +21,8 @@ A psychedelic ASCII donut rave suddenly explodes onto your screen, spinning maje
 <script>
 function downloadFile() {
     const link = document.createElement('a');
-    link.href = 'https://github.com/0x251e-challenge/challenges/raw/main/union-depository/reverse/the-confused-donut/Confused_Donut.exe';
-    link.download = 'Confused_Donut.exe';
+    link.href = 'https://github.com/0x251e-challenge/challenges/raw/main/union-depository/reverse/the-confused-donut/Confused_Donut.zip';
+    link.download = 'Confused_Donut.zip';
     link.click();
 }
 </script>
